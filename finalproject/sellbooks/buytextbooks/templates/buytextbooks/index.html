@@ -1,0 +1,24 @@
+{% if all_textbooks %}
+  <h3>Here are all the Textbooks:</h3>
+    <ul>
+      {% for textbook in all_textbooks %}
+        <li><a href = "{% url 'books:detail' textbook.id%}">{{textbook.textbooktitle}}</a></li>
+      {% endfor %}
+    </ul>
+
+{% endif %}
+
+  <h3>Here are all the Prepbooks:</h3>
+    <ul>
+      {% for prepbook in all_prepbooks %}
+        <li><a href = "{% url 'books:detail' prepbook.id%}">{{prepbook.prepbooktitle}}</a></li>
+      {% endfor %}
+    </ul>
+
+
+
+<!--
+      {% for textbook in all_textbooks %}
+        <a href = "{{textbook.id}}">{{textbook.textbooktitle}}</a>
+      {% endfor %}
+-->
