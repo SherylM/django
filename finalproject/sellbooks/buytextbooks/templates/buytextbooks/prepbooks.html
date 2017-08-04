@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+	/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+.search {
+    background-color: #ABDB25;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.container {
+    padding: 16px;
+}	
+	  </style>
+		<link href="https://fonts.googleapis.com/css?family=Questrial|Roboto" rel="stylesheet">
+		<link rel="stylesheet"  href="home.css">
+  	<title>Boop!</title>
+		<div style="float:right">
+		<input type="button" class="login" onclick="location.href='login.html';" value="Login"/>
+	<input type="button" class = "login" onclick="location.href='signup.html';" value="Sign Up"/>
+		</div>
+    <h1>Boop!</h1>
+  </head>
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="textbooks.html">Buy Textbooks</a></li>
+      <li><a class="active" href="prepbooks.html">Buy Prep Books</a></li>
+      <li><a href="sell.html">Sell Books</a></li>
+      <li><a href="blog.html">Blog</a></li>
+	</ul>
+  <body>
+	  <h2> Search</h2>
+<form action="prepbooksbrowse.html" style="border:1px solid #ccc">
+  <div class="container">
+   <label><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title" optional><br>
+    <label><b>Subject</b></label>
+    <input type="text" placeholder="Enter Subject" name="subject" optional>
+    <label><b>Publisher</b></label> <br>
+    <input type="text" placeholder="Name of Publisher" name="Publisher/Author" optional>
+    <label><b>Author</b></label> <br>
+    <input type="text" placeholder="Name of Author" name="Author" optional>
+	   <div class="clearfix">
+	<input type="submit" class = "search" value="Search"> 
+    </div>
+  </div>
+</form>
+  </body>
+</html>

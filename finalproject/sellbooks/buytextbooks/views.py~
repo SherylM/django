@@ -19,4 +19,4 @@ def detail(request, book_id):
 
     
 def home(request):
-    return render(request, 'buytextbooks/home.html')
+    return render(request, 'buytextbooks/testRun.html')

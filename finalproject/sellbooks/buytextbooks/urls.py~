@@ -12,4 +12,6 @@ urlpatterns = [
 
     #/buytextbooks/index.html/
     url(r'^index.html/', views.index, name='index'),
+
+
 ]
